@@ -1,0 +1,908 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color:rgba(101,101,245,0.5) ;
+    padding-right: 25px;
+    margin-right: 25px;
+    z-index: 10;
+}
+
+/* مربع البحث */
+.header input {
+    padding-left: 40px;
+    height: 30px;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius:10px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.links {
+    position: relative;
+    list-style: none;       /* يشيل النقط السوداء */
+    display: flex;          /* يخلي العناصر جنب بعض */
+    float:right;
+    margin-right: 80px;
+    margin-top: 15px;
+    gap: 30px;              /* المسافة بين العناصر */
+}
+
+/* تنسيق العناصر داخل القائمة */
+.links li {
+    font-size: 18px;        /* حجم الخط */
+    font-weight: bold;      /* يخلي الخط سميك */
+    cursor: pointer;        /* يخلي الماوس يتحول ليد */
+    margin-bottom: 50px ;       /* يشيل المارجن الافتراضي */
+    
+}
+
+.links  li  a{
+    color: #fff;
+    text-decoration: none;
+} 
+.i1{
+    padding-left:  40px;
+    font-size: large;
+    color: #fff;
+
+}
+.i2{
+    position: absolute;
+    top: 17px;
+    font-size: 15px;
+    margin-left: 50px;
+
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 4000px;
+}
+
+.container{
+    position: relative;
+}
+
+.div1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Ph/front-view-elegant-perfume-colored-flowers-light-blue-background_140725-144930.jpg);
+    position: relative;
+    background-size: cover;
+
+}
+
+.home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* شفاف */
+}
+
+.mainparagraph {
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title2{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.paragraph1{
+    letter-spacing: 3px;
+    color: #b5b3b3;
+    margin-top: -25px; 
+}
+
+.btn1{
+    text-transform: capitalize;
+    font-size: 18px;
+    border: 0;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.btn2{
+    background-color: rgb(145, 113, 233);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: 0;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.parent{
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    text-transform: capitalize;
+}
+
+.h2welcome{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 40px;
+
+}
+
+.hrwelcome{
+    width: 90px;
+    border: 2px solid rgb(108,107,206);
+    margin: auto;
+    padding: 0px;
+    margin-top: -25px;  
+}
+
+.sec2div1 
+{
+    float: left;
+    width: 320px;
+    height: 240px;
+    margin-top: 60px;
+    margin-left:100px;
+    text-align: center;
+    border: 1px solid rgb(110, 110, 224);
+    border-radius: 10px;
+}
+
+.iconsec2{
+    padding-top: 13px;
+    color:rgb(110, 110, 224);
+    font-size: 30px;
+}
+.sec2h2{
+    padding-top: 50px;
+}
+.sec2p2{
+    color: #858585;
+}
+
+
+h2
+{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.sec2h2, .sec2p2, .sec2link {
+    padding-top: 22px;
+}
+.sec2link {
+    text-decoration: none;
+    color: rgb(77, 77, 219);
+}
+/*- ---------------------------------------parent-------- ---------------------------------*/
+/* القسم الثالث */
+.sec3 {
+    width: 100%;
+    background-color: rgb(232, 234, 248);
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+/* العنوان */
+.h2sec3 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+/* الخط اللي تحت العنوان */
+.hrwelcome {
+    width: 90px;
+    border: 2px solid rgb(110, 110, 224);
+    margin: auto;
+}
+
+/* كل صورة */
+.sec3div {
+    float: left;
+    margin: 40px 40px 0px 70px;
+    position: relative;
+}
+
+/* الطبقة السوداء */
+.sec3layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+}
+
+/* النصوص */
+.h3category {
+    color: rgb(181, 181, 184);
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.sec3span {
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+}
+
+/* الأيقونات */
+.sec3icons a {
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    margin: 0 5px;
+    font-size: 20px;
+    color: white;
+    transition: color .3s;
+}
+
+.sec3icons a:hover {
+    color: rgb(110, 110, 224);
+}
+
+/* إظهار الطبقة عند hover */
+.sec3div:hover .sec3layer {
+    visibility: visible;
+}
+
+
+
+
+/* العنوان والخط */
+.sec4h2 {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.hrsec4 {
+    width: 100px;
+    height: 3px;
+    background-color: #666;
+    margin: 0 auto 40px auto;
+    border: none;
+    border-radius: 2px;
+}
+
+/* الكونتينر الأساسي */
+.containersec4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.parentsec4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 في كل صف */
+    gap: 30px;
+    max-width: 1100px; /* عرض مناسب */
+    margin: auto;
+}
+
+/* كل كارت */
+.offerdiv {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offerdiv:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* الأيقونة */
+.offer-icon {
+    font-size: 40px;
+    color: #6c63ff;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* العنوان داخل الكارت */
+.offeritem h2 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+/* النص */
+.offeritem p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+/* الكونتينر */
+.parentsec5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 40px 20px;
+}
+
+/* الجزء الخاص بالعنوان والكلام */
+.divchooseus1 {
+    flex: 1;
+}
+
+/* العنوان */
+.sec5h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    color: #222;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 40px; /* مايل شوية للشمال */
+}
+
+/* الخط */
+.sec5hr {
+    width: 80px;
+    border: 2px solid #6e6ee0;
+    margin: 0 0 20px 40px; /* مايل زي العنوان */
+}
+
+/* البراجراف */
+.sec5p {
+    padding-top: 20px ;
+    font-size: 16px;
+    color: #999999;     /* أفتح شوية */
+    line-height: 1.7;
+    max-width: 420px;
+    margin-left: 40px; /* زي العنوان */
+}
+
+/* الليستة */
+.sec5listul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    margin-left: 40px; /* زي الكلام */
+}
+
+.sec5listul li {
+    padding: 15px;
+    font-size: 17px;
+    color: #787777;
+    margin: 12px 5px;
+}
+
+.iconinfo {
+    color: #6e6ee0;
+    margin-right: 10px;
+}
+
+/* الجزء الخاص بالصورة */
+.divchooseus2 {
+    flex: 1;
+    text-align: right; /* الصورة يمين */
+}
+
+.divchooseus2 img {
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* النقاط */
+.sec5bullet {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.sec5bullet li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sec5bullet li.active,
+.sec5bullet li:hover {
+    background: #6e6ee0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+.sec6parent{
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-image: url(../ph/choose.jpg);
+    position: relative;
+    background-size: cover;
+}
+.sec6parent {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+}
+
+
+.sec6items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 300px;
+    z-index: 2; /* فوق overlay */
+    color: #fff; /* النص أبيض */
+    text-align: center;
+}
+
+.sec6item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec6-item-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #a870ec; /* لون الأيقونة */
+}
+
+.sec6-item-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sec6-item-text {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/* ====== العنوان ====== */
+.pricing {
+    text-align: center;
+    margin: 90px 0 20px;
+
+}
+
+.pricing-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #000;
+
+    
+}
+
+.hrsec4 {
+    width: 80px;
+    height: 3px;
+    background: #6c63ff; /* لون بنفسجي */
+    border: none;
+    margin: 10px auto;
+    border-radius: 2px;
+
+}
+
+/* ====== الحاويات ====== */
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* مسافة بين الكروت */
+    position: relative;
+}
+
+
+
+
+.pricimg-div1 {
+    flex: 1;
+    border: 1px solid rgb(135, 135, 230);
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 18px;
+    float: left;
+    margin-left: 160px;
+    background-color:#eceaea
+    
+    
+}
+
+/* ====== العنوان الداخلي ====== */
+.pricimg-div1-p {
+    text-transform: uppercase;
+    color: black;
+}
+
+/* ====== السعر ====== */
+.pricing-div1-month {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(135, 135, 230);
+    margin: 20px auto;
+    padding: 12px 0;
+}
+
+.h3-dollar {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.span-month {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 3px;
+}
+
+/* ====== القائمة ====== */
+.pricing-ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.pricing-ul li {
+    padding: 10px 0;
+}
+
+/* ====== الزر ====== */
+.pricing-btn {
+    width: 170px;
+    height: 30px;
+    border: 2px solid rgb(135, 135, 230);
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 12px;
+}
+
+.P-A{
+    width: 100%;
+    height: 400px;
+    background-image: url(../ph/front-view-cologne-bottle-rotten-tree-branch-isolated-light-blue-background_140725-145204.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 130px;
+}
+
+.overlay-about{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5); /* rgba هي القيمه ب الاوباستي */
+}
+
+.container-about{
+    width: 80%;
+    margin: auto;
+}
+.about-content{
+    margin-top: 20px;
+    height: 100%;
+    overflow: auto;
+}
+
+.about-item1{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.about-item1-info{
+    
+    text-transform: capitalize;
+    padding: 130px 40px 10px 150px;
+    position: relative;
+    line-height: 1.4;
+}
+.about-item1-info img {
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 120px;
+}
+
+.about-item1-info h3 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.about-item1-info span {
+    color: rgb(5, 3, 128);
+    font-size: 20px;
+}
+
+.about-p {
+    margin: 0px 30px 0px 50px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    color: black;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+/* Team Section */
+.team-t {
+    padding-top: 130px;
+}
+
+.team-t h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.hrsec4 {
+    width: 90px;
+    border: 2px solid rgb(110, 110, 224);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.team-container {
+    width: 90%;                  /* مسافة من الجناب */
+    margin: auto;
+}
+
+.team-parent {
+    display: flex;               /* العناصر جنب بعض */
+    justify-content: space-between; 
+    margin-top: 50px;
+    gap: 25px;                   /* مسافة بين العناصر */
+}
+
+/* Team Item */
+.team-items {
+    flex: 1 1 30%;               /* ياخد 30% تقريبًا */
+    max-width: 30%;
+    background-color: rgb(223, 221, 221);
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Image container */
+.team-div1-img1 {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-div1-img1 img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+/* أيقونات السوشيال */
+.team-icons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px; /* عرض أوسع شوية */
+    background-color: #6e6ee0;
+    display: flex;
+    flex-direction: column; /* ترتيب رأسي */
+    align-items: center;    /* توسيط أفقي */
+    justify-content: center;/* توسيط رأسي */
+    gap: 15px;              /* مسافة بين الأيقونات */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    opacity: 0;             /* مخفي في العادي */
+    transform: translateX(100%); /* بره الكارد */
+    transition: all 0.4s ease;
+}
+
+/* لما أعمل hover على الكارد */
+.team-items:hover .team-icons {
+    opacity: 1;              /* يظهر */
+    transform: translateX(0);/* يدخل مكانه */
+}
+
+/* شكل الأيقونات */
+.team-icons a i {
+    font-size: 18px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.team-icons a i:hover {
+    transform: scale(1.2); /* تكبر عند الهـافر */
+    color: #000;           /* لون مختلف عند الهـافر */
+}
+
+/* تغيير لون البراجراف */
+.team-items:hover .team-info-paragraph {
+    color: blue;
+    transition: color 0.3s ease;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+
+.news-title{
+    margin-top: 150px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 27px;
+}
+
+.hrsec4{
+    width: 90px;
+    border: 2px solid rgb(145, 113, 233);
+    margin:auto;
+    margin-top: 10px;
+}
+
+.news-container{
+    width: 75%;
+    margin:auto;
+}
+
+.news-parent{
+    height:auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+
+.news-item{
+    width: 30%;
+    text-align: center;
+    height:auto;
+    float: left;
+    border: 1px solid rgb(135, 135, 230);
+    border-radius: 15px;
+    position: relative;
+}
+
+.news-item img {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.news-icons{
+    margin-bottom: 15px;
+}
+
+.news-icons ul {
+    list-style: none;
+}
+
+.news-icons ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.news-icons h3 {
+    margin: 15px 0px;
+}
+
+.news-icons p {
+    margin-bottom: 25px;
+    color: rgb(133, 131, 131);
+}
+
+.news-read-more {
+    text-decoration: none;
+}
+
+.Mar {
+    margin: 0px 5%;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #bdc0e5;
+    padding: 20px 0px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.content-footer {
+    margin: auto;
+    height: 300px;
+    width: 40%;
+    text-align: center;
+}
+
+.img-footer {
+    height: 30%;
+}
+
+.img-footer img {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+.ul-footer {
+    margin-top: 130px;
+}
+.ul-footer ul {
+    list-style: none;
+}
+
+.ul-footer ul li {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #7f86e8;
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+    padding-top: 11px;
+}
+
+.ul-footer p {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(100, 99, 99);
+    padding-top: 10px;
+}
